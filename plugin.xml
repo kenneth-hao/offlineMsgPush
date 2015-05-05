@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<class>com.yappam.openfire.plugin.OfflineMsgPushPlugin</class>
+	<name>OfflineMsgPush</name>
+    <description>MobileDevices Push</description>
+    <author>hyw</author>
+    <version>1.0.0</version>
+    <date>03/04/2015</date>
+    <minServerVersion>1.0.0</minServerVersion>
+</plugin>
