@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -72,10 +73,10 @@ public class OfflineMessageListenerImpl implements OfflineMessageListener {
 	
 			post.setEntity(new UrlEncodedFormEntity(nvps, "UTF-8"));
 			
-			// HttpResponse response = httpClient.execute(post);
+			HttpResponse response = httpClient.execute(post);
 			
-			// System.out.println(response.getStatusLine());
-			// log.info("RESPONSE STATUS >> " + response.getStatusLine());
+			System.out.println(response.getStatusLine());
+			log.info("RESPONSE STATUS >> " + response.getStatusLine());
 			
 			httpClient.getConnectionManager().shutdown(); 
 			
